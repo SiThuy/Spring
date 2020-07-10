@@ -1,0 +1,82 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="bg" template="/template/bg.jsp">
+		<put-attribute name="title" value="Title" />
+	</definition>
+
+	<!-- Bài 3.2 -->
+	<definition name="template" extends="bg">
+		<put-attribute name="title" value="Template Example" />
+		<put-attribute name="content" value="/views/template.jsp" />
+	</definition>
+
+    <!--   Bài 5.2 -->
+	<definition name="author.index" extends="bg">
+		<put-attribute name="content" value="/views/author/index.jsp" />
+	</definition>
+	
+    <!--   Bài  5.3 -->
+	<definition name="author.add" extends="bg">
+		<put-attribute name="content" value="/views/author/add.jsp" />
+	</definition>
+
+    <!--   Bài 5.4 -->
+	<definition name="author.edit" extends="bg">
+		<put-attribute name="title" value="Edit Author" />
+		<put-attribute name="content" value="/views/author/edit.jsp" />
+	</definition>
+	
+	<!-- Bài 5.6 -->
+    <definition name="category.index" extends="bg">
+		<put-attribute name="content" value="/views/category/index.jsp" />
+	</definition>
+	
+    <!-- Bài  5.7 -->
+	<definition name="category.add" extends="bg">
+        <put-attribute name="content" value="/views/category/add.jsp" />
+    </definition>
+    
+    <!-- Bài 6.2 -->
+	<definition name="category.edit" extends="bg">
+        <put-attribute name="content" value="/views/category/edit.jsp" />
+    </definition>
+    
+   <!--  Bài 6.3 -->
+    <definition name="home.index" extends="bg">
+       <put-attribute name="content" value="/views/home/index.jsp" />
+     </definition>
+    
+   <!--  Bài 6.4 -->
+    <definition name="home.detail" extends="bg">
+         <put-attribute name="content" value="/views/home/detail.jsp" />
+    </definition>
+    
+  <!--   Bài 6.5 -->
+    <definition name="home.search" extends="bg">
+         <put-attribute name="content" value="/views/home/search.jsp" />
+    </definition>
+    
+    <!-- Bài 6.7 -->
+    <definition name="cart.index" extends="bg">
+         <put-attribute name="content" value="/views/cart/index.jsp" />
+    </definition>
+    
+    <!-- Bài 6.8 -->
+     <definition name="cart.checkout" extends="bg">
+         <put-attribute name="content" value="/views/cart/checkout.jsp" />
+    </definition>
+    
+   <!--  Bài 9.2 -->
+    <definition name="bgpanel" template="/template/bgpanel.jsp">
+      <put-attribute name="title"   value="Title"/>
+    </definition>
+    
+    <definition name="auth.register" extends="bgpanel">
+         <put-attribute name="title" value="Register"/>
+         <put-attribute name="content" value="/views/auth/register.jsp" />
+    </definition>
+    
+    
+</tiles-definitions>
